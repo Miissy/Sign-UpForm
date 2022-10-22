@@ -7,9 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <section class="content">
+
+        <div class="left">
+            <div class="bg-img">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                    <h1>Wandering Through</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text-box">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize
+                    your deepest dreams. Sign up now to get started!</p>
+                <br>
+                <p>You know you want to.</p>
+            </div>
+
+            <form action="Sign-UpForm" method="post">
+
+                <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" autocomplete="given-name" name="first-name" id="first-name" required>
+                    <p class="help">Please enter your First Name.</p>
+                </div>
+
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" autocomplete="family-name" name="last-name" id="last-name" required>
+                    <p class="help">Please enter your Last Name.</p>
+                </div>
+
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" autocomplete="email" name="email" id="email" required>
+                    <p class="help">Please enter your E-mail.</p>
+                </div>
+
+                <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" autocomplete="tel" name="phone" id="phone" required>
+                    <p class="help">Please enter your Phone Number.</p>
+                </div>
+
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" autocomplete="new-password" name="password" id="password" minlength="5"
+                        maxlength="20" required>
+                    <p class="help">Please enter a Password between 6 and 20 characters.</p>
+                </div>
+
+                <div class="input">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" autocomplete="new-password" name="confirm-password" id="confirm-password"
+                        minlength="5" maxlength="20" required>
+                    <p class="help">Please confirm the same Password</p>
+                </div>
+
+                <div class="btn">
+                    <button type="submit" class="btn">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 

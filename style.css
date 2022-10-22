@@ -1,0 +1,82 @@
+:root {
+    --main-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+/* Image and Logo Left Side*/
+
+.left {
+    width: 40%;
+    font-size: 2em;
+    color: #000;
+}
+
+.bg-img {
+    background-image: url(./img/japan.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    gap: 10px;
+}
+
+.logo>img {
+    height: 10vh;
+}
+
+/* Form, text box and button Right side */
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 60%;
+}
+
+.text-box {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    width: 80%;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+/* Button and log in text */
+
+/* Display error help message */
+
+.help {
+    display: none;
+}
