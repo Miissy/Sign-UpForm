@@ -1,5 +1,5 @@
 :root {
-    --main-color: #fff;
+    --main-color: #80ed99;
 }
 
 * {
@@ -56,6 +56,10 @@
     width: 60%;
 }
 
+.form-section {
+    display: flex;
+}
+
 .text-box {
     width: 80%;
     padding-bottom: 30px;
@@ -71,12 +75,52 @@ form {
 .input {
     display: flex;
     flex-flow: column wrap;
+    width: 40%;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--main-color);
 }
 
 /* Button and log in text */
 
+.btn {
+    margin-top: 10px;
+}
+
+.btn>button {
+    padding: 10px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn>button:hover {
+    background-color: var(--main-color);
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover {
+    color: rgb(82, 82, 82);
+}
+
 /* Display error help message */
 
 .help {
+    color: rgb(255, 68, 68);
     display: none;
 }
